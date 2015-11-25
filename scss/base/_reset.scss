@@ -1,0 +1,111 @@
+// reset
+
+body {
+	min-width: 320px;
+	font-weight: 300;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@media screen and (min-width: 768px) {
+		font-size: 14px;
+	}
+	@media screen and (min-width: 1024px) {
+		@include font-size(17px, 20px);
+	}
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+button,
+[type],
+a {
+	@include transition(all 0.3s ease);
+	
+	&:focus {
+		outline: none;
+		@include box-shadow(none);
+	}
+}
+
+.img-holder {
+	img {
+		@include responsive-img;
+	}
+}
+
+.btn {
+	border-width: 1px;
+	font-weight: 400;
+	white-space: normal;
+	text-transform: uppercase;
+	@media screen and (min-width: 768px) {
+		min-width: 180px;
+		padding: 9px 10px;
+		@include font-size(15px, 18px);
+	}
+	
+	&:active,
+	&:active:focus,
+	&:hover,
+	&:focus {
+		outline: none;
+		@include css3(box-shadow,none);
+	}
+	
+	&.btn-info {
+		&:hover {
+			color: $white;
+			background: $shakespeare;
+		}
+	}
+	
+	.symbol {
+		@include align;
+		margin: -3px 0 -5px 5px;
+		@include font-size(18px, 1);
+		@media screen and (min-width: 768px) {
+			margin: -5px 0 -5px 5px; 
+			@include font-size(25px, 1);
+		}
+	}
+}
+
+[style*=background-image] {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.form-control {
+	padding: 6px 13px;
+	@include font-size(13px);
+	
+	&:focus {
+		outline: none;
+		@include box-shadow(none);
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	a[href^="tel"], a[href^="skype"], a[href^="sms"] {
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+@import '_custom-icons';
+
+#wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	width: auto;
+	max-width: 1086px;
+}

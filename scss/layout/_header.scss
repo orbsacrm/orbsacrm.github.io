@@ -1,0 +1,307 @@
+// header
+
+.top-container {
+	position: relative;
+}
+
+.header-trigger {
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	@include size(1px);
+}
+
+.hero-block {
+	color: $white;
+	display: table;
+	overflow: hidden;
+	position: relative;
+	@include size(100%, 100vh);
+	
+	.hero-holder {
+		padding: 50px 0;
+		min-height: 400px;
+		@include align(table-cell, middle);
+		@include media('>=widescreen') {
+			padding: 100px 0;
+		}
+	}
+	
+	h1 {
+		margin: 0 0 20px;
+		font: 300 30px/1.25 $roboto-cond;
+		@include media('>=tablet') {
+			font-size: 40px;
+		}
+		@include media('>=desktop') {
+			font-size: 60px;
+		}
+		@include media('>=widescreen') {
+			margin: 0 0 73px;
+			@include font-size(73px, 1);
+		}
+	}
+	
+	.title {
+		display: block;
+		color: $yellow;
+		font-weight: 300;
+		@include font-size(18px);
+		text-transform: uppercase;
+		@include media('>=tablet') {
+			font-size: 20px;
+		}
+		@include media('>=desktop') {
+			font-size: 23px;
+		}
+		@include media('>=widescreen') {
+			margin: 0 0 26px;
+			@include css3(transform,scaleY(1.2));
+		}
+	}
+	
+	.btn {
+		min-width: 177px;
+		font-weight: 400;
+		padding: 9px 15px;
+		@include font-size(14px, 18px);
+		
+	}
+	
+	.video-img {
+		max-width: inherit;
+		vertical-align: top;
+		@include size(100%, auto);
+	}
+	
+	.video-area {
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+	}
+	
+	.video-area video {
+		visibility: hidden;
+		@include css3(mix-blend-mode,luminosity);
+	}
+	
+}
+
+.hero-block video,
+iframe,
+object,
+embed {
+    max-width: none;
+	vertical-align: baseline;
+}
+
+.left-position{
+    margin: 0 0 0 150px;
+}
+
+#header {
+	top: 0;
+	left: -11px;
+	right: -11px;
+	z-index: 999;
+	padding: 9px 0;
+	position: absolute;
+	
+	.container {
+		width: auto;
+		max-width: 1144px;
+	}
+}
+
+.navbar-header {
+	margin: 0;
+	padding: 0 20px;
+	@include media('>desktop') {
+		padding: 0;
+		margin: 2px 29px 0 0;
+	}
+}
+
+.navbar-toggle {
+	margin-right: 0;
+}
+
+.navbar-brand {
+	padding: 0;
+	margin: 8px 0 0 10px;
+	@include size(90px, auto);
+	
+	@include media('>desktop') {
+		width: 104px;
+		margin: 4px 0 0 30px;
+	}
+	
+	> img {
+		@include responsive-img;
+	}
+}
+
+.navbar-collapse {
+	background: #000;
+	border-bottom: solid 10px #000 !important;
+	@include css3(box-shadow,none);
+	@include media('>desktop') {
+		border-width: 0 !important;
+		background: none;
+	}
+	
+	.navbar-right {
+		text-align: center;
+	}
+	
+	&.in {
+		max-height: 270px;
+		@include media('>640px') {
+			max-height: 400px;
+		}
+	}
+}
+
+.navbar-default {
+	margin: 0 -30px;
+	@include media('>desktop') {
+		margin: 0;
+	}
+	
+	.navbar-nav {
+		@include media('>desktop') {
+			margin: 6px 0 0;
+		}
+		
+		> li {
+			@include media('>desktop') {
+				margin: 0 15px 0 0;
+			}
+			
+			> a {
+				font-weight: 300;
+				padding: 10px 30px;
+				font-family: $roboto;
+				
+				@include media('>desktop') {
+					padding: 0;
+					display: inline;
+					@include font-size(15px, 32px);
+				}
+				
+			}
+		}
+	}
+	
+	.navbar-right {
+		color: $star-dust;
+		font: 300 15px/24px $roboto;
+		
+		@include media('>desktop') {
+			padding: 0;
+			margin: 12px 3px 0 0;
+		}
+		
+		a {
+			color: $white;
+			&:hover {
+				color: $yellow;
+			}
+			
+			&.btn:hover {
+				color: $white;
+			}
+		}
+	}
+	
+	.btn {
+		vertical-align: top;
+		border: $fiord solid 1px;
+		color: $white;
+		min-width: 67px;
+		padding: 1px 10px;
+		margin: 0 0 0 5px;
+		text-transform: none;
+		@include bg-hover($fiord);
+		font: 300 15px/24px $roboto;
+	}
+	
+	.caret {
+		border: 0;
+		font-size: 23px;
+		vertical-align: top;
+		margin: 5px -12px 0 24px;
+		@include css3(transform-origin,right);
+		@include css3(transform,rotate(90deg));
+		@include media('>desktop') {
+			margin: 14px -17px 0 29px;
+		}
+		&:before {
+			content: '›';
+			color: $star-dust2;
+			font-family: "Bell MT", Helvetica, Arial, sans-serif;
+		}
+	}
+	
+	.btn-demo {
+		width: 160px;
+		display: none;
+		font-size: 12px;
+		font-weight: 400;
+		margin: 0 auto;
+		color: $ebony-clay;
+		background: $yellow;
+		border: solid 1px $yellow;
+		text-transform: uppercase;
+		@include media('>desktop') {
+			width: auto;
+			float: right;
+			padding: 0 10px;
+			min-width: 165px;
+			margin: 12px 0 0 5px;
+			@include font-size(18px, 30px);
+		}
+		
+		&:hover {
+			background: darken($yellow, 10%);
+			border-color: darken($yellow, 10%);
+		}
+	}
+	
+	.dropdown-menu {
+		font-size: 15px;
+		> li {
+			> a {
+				line-height: 1.25;
+			}
+		}
+	}
+	
+}
+
+.header-trigger {
+	&.fixed-position {
+		+ #header {
+			padding: 0;
+			position: fixed;
+			background: $shark;
+			@include transition(all 0.3s ease);
+			@include media('>desktop') {
+				padding: 10px 0 14px;
+			}
+			
+			.navbar-default {
+				.btn-demo {
+					display: block;
+				}
+				
+				.navbar-right {
+					display: none;
+				}
+			}
+		}
+	}
+}

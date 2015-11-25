@@ -1,0 +1,122 @@
+// hide-text
+@mixin hide-text {
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+}
+
+// placeholder
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&::-moz-placeholder {opacity: 1; @content}
+	&:-moz-placeholder {@content}
+	&:-ms-input-placeholder {@content}
+	&.placeholder {@content}
+}
+
+// arrow
+@mixin arrow($border-width) {
+	content: '';
+	position: absolute;
+	border-style: solid dashed;
+	border-color: transparent;
+	border-width: $border-width;
+}
+
+// alignment
+@mixin align($display: inline-block, $align: top) {
+	display: $display;
+	vertical-align: $align;
+}
+
+// font-size
+@mixin font-size($size, $line: 1.25) {
+	font-size: $size;
+	line-height: $line;
+}
+
+
+@mixin font-em($font-size, $line, $base: 16px) {
+	font-size: $font-size/$base+rem;
+	line-height: $line/$font-size;
+}
+
+// link-hoder
+@mixin link-color($color) {
+	color: $color;
+	text-decoration: none;
+	&:hover {
+		color: darken($color, 15%);
+	}
+}
+
+// background-hover
+@mixin bg-hover($color) {
+	background-color: $color;
+	&:hover {
+		background-color: darken($color, 10%);
+	}
+}
+
+// custom-icon
+@mixin custom-icon($icon) {
+	&:before {
+		font-family: 'icomoon';
+		content: $icon;
+	}
+}
+
+// responsive-img
+@mixin responsive-img {
+	display: block;
+	max-width: none;
+	@include size(100%, auto);
+}
+
+// custom font mixin
+@mixin fontface ($fontfamily, $filename, $weight, $style) {
+	font-family: $fontfamily;
+	src: url('../fonts/#{$filename}.eot');
+	src: url('../fonts/#{$filename}.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/#{$filename}.woff') format('woff'),
+		 url('../fonts/#{$filename}.ttf') format('truetype'),
+		 url('../fonts/#{$filename}.svg#{$filename}') format('svg');
+	font-weight: $weight;
+	font-style: $style;
+}
+
+// some CSS3 style
+@mixin css3($property, $value) {
+	@each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+			#{$prefix}#{$property}: $value;
+	}
+}
+
+// position
+@mixin position($value) {
+	top: $value;
+	left: $value;
+	right: $value;
+	bottom: $value;
+	position: absolute;
+}
+
+// size
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+// rgba-bg
+@mixin rgba-bg($color, $opacity) {
+	background: rgba($color, $opacity);
+}
+
+
+@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+	background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+	background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+	background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}
