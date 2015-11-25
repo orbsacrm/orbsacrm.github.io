@@ -1,136 +1,136 @@
 // footer
 
 .bottom-container {
-	padding: 30px 0 0;
-	background: $shark;
-	@include media('>=desktop') {
-		padding: 54px 0 0;
-	}
+  padding: 30px 0 0;
+  background: $shark;
+  @include media('>=desktop') {
+    padding: 54px 0 0;
+  }
 }
 
 .footer-nav {
-	padding-bottom: 15px;
-	@include font-size(0, 0);
-	@include media('>=tablet') {
-		padding-bottom: 30px;
-	}
-	@include media('>=desktop') {
-		max-width: 984px;
-		padding-bottom: 37px;
-	}
-	
-	.nav-holder {
-		@include font-size(13px, 16px);
-		@include media('>=tablet') {
-			float: none;
-			@include align;
-			margin: 0 0 15px;
-		}
-		@include media('>=desktop') {
-			width: 20%;
-		}
-		
-		ul {
-			max-height: 0;
-			overflow: hidden;
-			font-weight: 400;
-			@include media('>=tablet') {
-				overflow: visible;
-				max-height: inherit;
-			}
-		}
-	}
-	
-	.hover {
-		
-		ul {
-			max-height: none;
-		}
-	}
-	
-	h3 {
-		margin: 0;
-		position: relative;
-		padding: 0 30px 14px 0;
-		@include font-size(14px);
-		
-		&:after {
-			top: 0;
-			right: 0;
-			content: "\e901";
-			position: absolute;
-			font-family: 'icomoon';
-			@include transition(all 0.3s ease);
-			@include media('>=tablet') {
-				display: none;
-			}
-		}
-	}
-	
-	a {
-		color: $edward;
-		&:hover {
-			color: $white;
-		}
-	}
-	
-	.tel {
-		@include align;
-		margin: 0;
-		@include media('>=widescreen') {
-			margin: -15px 0 1px;
-		}
-	}
+  padding-bottom: 15px;
+  @include font-size(0, 0);
+  @include media('>=tablet') {
+    padding-bottom: 30px;
+  }
+  @include media('>=desktop') {
+    max-width: 984px;
+    padding-bottom: 37px;
+  }
+
+  .nav-holder {
+    @include font-size(13px, 16px);
+    @include media('>=tablet') {
+      float: none;
+      @include align;
+      margin: 0 0 15px;
+    }
+    @include media('>=desktop') {
+      width: 20%;
+    }
+
+    ul {
+      max-height: 0;
+      overflow: hidden;
+      font-weight: 400;
+      @include media('>=tablet') {
+        overflow: visible;
+        max-height: inherit;
+      }
+    }
+  }
+
+  .hover {
+
+    ul {
+      max-height: none;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    position: relative;
+    padding: 0 30px 14px 0;
+    @include font-size(14px);
+
+    &:after {
+      top: 0;
+      right: 0;
+      content: "\e901";
+      position: absolute;
+      font-family: 'icomoon';
+      @include transition(all 0.3s ease);
+      @include media('>=tablet') {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: $edward;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .tel {
+    @include align;
+    margin: 0;
+    @include media('>=widescreen') {
+      margin: -15px 0 1px;
+    }
+  }
 }
 
 #footer {
-	color: $edward;
-	padding: 20px 0;
-	font-weight: 400;
-	background: $mirage;
-	@include font-size(12px, 15px);
-	@include media('>=desktop') {
-		padding: 26px 0;
-	}
-	
-	.logo {
-		width: 100%;
-		margin: 0 0 10px;
-		@include media('>=tablet') {
-			width: auto;
-			margin: 0 10px 0 0;
-		}
-		@include media('>=desktop') {
-			margin: 3px 10px 0 1px;
-		}
-		
-		a {
-			width: 80px;
-			margin: 0 auto;
-			display: block;
-			@include media('>=desktop') {
-				width: 105px;
-			}
-		}
-		
-		img {
-			@include responsive-img;
-		}
-	}
-	
-	.pull-right {
-		width: 100%;
-		text-align: center;
-		@include media('>=tablet') {
-			width: auto;
-			text-align: right;
-		}
-	}
-	
-	a {
-		color: $edward;
-		&:hover {
-			color: $white;
-		}
-	}
+  color: $edward;
+  padding: 20px 0;
+  font-weight: 400;
+  background: $mirage;
+  @include font-size(12px, 15px);
+  @include media('>=desktop') {
+    padding: 26px 0;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 0 0 10px;
+    @include media('>=tablet') {
+      width: auto;
+      margin: 0 10px 0 0;
+    }
+    @include media('>=desktop') {
+      margin: 3px 10px 0 1px;
+    }
+
+    a {
+      width: 80px;
+      margin: 0 auto;
+      display: block;
+      @include media('>=desktop') {
+        width: 105px;
+      }
+    }
+
+    img {
+      @include responsive-img;
+    }
+  }
+
+  .pull-right {
+    width: 100%;
+    text-align: center;
+    @include media('>=tablet') {
+      width: auto;
+      text-align: right;
+    }
+  }
+
+  a {
+    color: $edward;
+    &:hover {
+      color: $white;
+    }
+  }
 }
