@@ -257,27 +257,6 @@ var PathConfig = require('./grunt-settings.js');
       },
     },
 
-    //copy files
-    // copy: {
-    //   dist: {
-    //     files: [
-    //       {
-    //         expand: true,
-    //         dot: true,
-    //         cwd: './',
-    //         src: [
-    //           '**',
-
-    //           '!scss/**',
-    //           '!**/**/.svn/**',
-    //           '!css/**',
-    //         ],
-    //         dest: '<%= config.distDir %>'
-    //       }
-    //     ]
-    //   },
-    // },
-
     csscomb: {
       all: {
         expand: true,
@@ -331,7 +310,6 @@ var PathConfig = require('./grunt-settings.js');
         cache: 'sftpCache.json',
         src: 'css',
         dest: '<%= config.sftpDestination %>',
-        //exclusions: ['/path/to/source/folder/**/.DS_Store', '/path/to/source/folder/**/Thumbs.db', 'dist/tmp'],
         serverSep: '/',
         concurrency: 4,
         progress: true
