@@ -18,32 +18,6 @@ var PathConfig = require('./grunt-settings.js');
       }
     },
 
-    // autoprefixer
-    // autoprefixer: {
-    //   options: {
-    //     browsers: ['last 4 version', 'Android 4', 'ie 8', 'ie 9']
-    //   },
-
-    //   multiple_files: {
-    //     options: {
-    //         map: true
-    //     },
-    //     expand: true,
-    //     flatten: true,
-    //     src: ['<%= config.cssDir %>*.css', '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css']
-    //   },
-
-    //   dist: {
-    //     src: ['<%= config.cssDir %>*.css', 
-    //           '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css',
-    //           '!<%= config.cssDir %>bootstrap.css',
-    //           '!<%= config.cssDir %>bootstrap.min.css',
-    //           '!<%= config.cssDir %>ie.css',
-    //           '!<%= config.cssDir %>ie8.css'
-    //           ]
-    //   },
-    // },
-
     postcss: {
       dev: {
         options: {
@@ -170,13 +144,13 @@ var PathConfig = require('./grunt-settings.js');
       }
     },
 
-    imagemin: {                          
-      dynamic: {                         
+    imagemin: {
+      dynamic: {
         files: [{
-          expand: true,                  
-          cwd: '<%= config.imgSourceDir %>',                   
-          src: ['**/*.{jpg,gif}'],   
-          dest: '<%= config.imgDir %>'                  
+          expand: true,
+          cwd: '<%= config.imgSourceDir %>',
+          src: ['**/*.{jpg,gif}'],
+          dest: '<%= config.imgDir %>'
         }]
       }
     },
@@ -259,10 +233,10 @@ var PathConfig = require('./grunt-settings.js');
           src : ['*.html','<%= config.cssDir %>*.css', '*.css']
         },
         options: {
+          open: false,
           server: {
-            baseDir: "../",
-            index: "index.html",
-            directory: true
+            baseDir: "./",
+            index: "./index.html",
           },
           watchTask: true
         }
@@ -281,7 +255,7 @@ var PathConfig = require('./grunt-settings.js');
           message: 'SASS finished running', //required
         }
       },
-    }, 
+    },
 
     //copy files
     // copy: {
@@ -299,7 +273,7 @@ var PathConfig = require('./grunt-settings.js');
     //           '!css/**',
     //         ],
     //         dest: '<%= config.distDir %>'
-    //       } 
+    //       }
     //     ]
     //   },
     // },
@@ -307,7 +281,7 @@ var PathConfig = require('./grunt-settings.js');
     csscomb: {
       all: {
         expand: true,
-        src: ['<%= config.cssDir %>*.css', 
+        src: ['<%= config.cssDir %>*.css',
               '<%= config.cssMainFileDir %><%= config.cssMainFileName %>.css',
               '!<%= config.cssDir %>bootstrap.css',
               '!<%= config.cssDir %>ie.css',
@@ -366,8 +340,6 @@ var PathConfig = require('./grunt-settings.js');
 
   });
 
-// run task
-//dev 
   //watch
   grunt.registerTask('w', ['watch']);
   //browser sync
@@ -378,22 +350,18 @@ var PathConfig = require('./grunt-settings.js');
 
   //create svg sprite
   grunt.registerTask('svgsprite', ['svgmin', 'svgstore', 'svg2string']);
-  
+
   grunt.registerTask('default', ['dev']);
 
   // upload to server
   grunt.registerTask('sftp', ['sftp-deploy']);
 
-//finally 
   //css beautiful
   grunt.registerTask('cssbeauty', ['sass:dist', 'cmq:dist', 'postcss:dist', 'csscomb:dist']);
+
   //img minify
   grunt.registerTask('imgmin', ['imagemin', 'pngmin:all', 'svgmin']);
 
   //final build
   grunt.registerTask('dist', ['clean:temp', 'imgmin', 'cssbeauty']);
-
 };
-
-
-
