@@ -7,7 +7,6 @@ module.exports = {
     jsDir:            'js/',
     imgDir:           'images/',
     imgSourceDir:     'sourceimages/',
-    //hasBower: {includePaths: ['bower_components/foundation/scss']},
 
     // sftp server
     sftpServer:       'example.com',
