@@ -120,9 +120,9 @@ function initVideoBg() {
       })
 
       this.video.prop('muted', true);
-      if (this.options.loop) {
-        this.video.attr('loop', 'loop');
-      }
+      // if (this.options.loop) {
+      //   this.video.attr('loop', 'loop');
+      // }
       if (this.options.autoPlay) {
         this.video.attr('autoplay', '');
       }
@@ -139,7 +139,7 @@ function initVideoBg() {
     },
     attachEvents: function() {
       var self = this;
-        
+
       this.video[0].oncanplaythrough = function() {
         self.ratio = self.video.width() / self.video.height();
         self.resizeHandler();
@@ -155,10 +155,11 @@ function initVideoBg() {
           visibility: 'visible'
         });
       };
-      
-      this.video[0].onended = function() {
-        self.makeCallback('onFinish', self);
-      };
+
+      this.video[0].addEventListener('ended', function() {
+        self.video[0].load();
+        self.video[0].play();
+      }, false);
 
       this.resizeHandler = function() {
         self.resizeVideo();
