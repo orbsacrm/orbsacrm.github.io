@@ -1,11 +1,11 @@
 {
-  "name": "Este",
+  "name": "orbsa-website",
   "authors": [
-    "Daniel Steigerwald"
+    "Daniel Steigerwald",
+    "Pedro Tacla Yamada"
   ],
-  "description": "Dev stack and starter kit for React universal web apps",
+  "description": "orbsa.com website",
   "private": true,
-  "//": "Use gulp for dev. It's cross platform.",
   "scripts": {
     "postinstall": "gulp build --production",
     "test": "gulp test"
@@ -109,9 +109,7 @@
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.1.0",
     "webpack-isomorphic-tools": "^2.2.24",
-    "yargs": "^3.3.1"
-  },
-  "devDependencies": {
+    "yargs": "^3.3.1",
     "expose-loader": "^0.7.1",
     "less-loader": "^2.2.2"
   }
