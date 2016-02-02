@@ -40,7 +40,7 @@ export default class Hero extends Component {
             <div className="row">
               <div className="col-xs-12">
                 <strong className="title">Orbsa Connects the Dots</strong>
-                <h1>World's Leading Subscription Commerce Platform</h1>
+                <h1>World Leading Subscription Commerce Platform</h1>
                 <Link to="/signup" className="btn btn-primary">Sign-Up For Free</Link>
               </div>
             </div>
