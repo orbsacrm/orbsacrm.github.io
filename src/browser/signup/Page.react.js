@@ -7,9 +7,8 @@ export default class Page extends Component {
   render() {
     return (
       <form action="#"
-            className="form-subscribe text-center"
+            className="SignupPage form-subscribe text-center"
             style={{
-              minHeight: '62.5vh',
               background: '#141a20'
             }}>
         <div className="container">
