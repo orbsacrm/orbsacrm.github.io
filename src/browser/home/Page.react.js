@@ -317,7 +317,7 @@ export default class Page extends Component {
                   <input type="text" placeholder="Your name" className="form-control" />
                   <input type="email" placeholder="youremail@example.com" className="form-control" />
                 </div>
-                <button type="submit" className="btn btn-primary">See Orbsa <span className="symbol">»</span></button>
+                <button type="submit" className="btn btn-primary">See Orbsa</button>
                 <p>We guarantee 100% privacy. Your information will not be shared.</p>
               </div>
             </div>
