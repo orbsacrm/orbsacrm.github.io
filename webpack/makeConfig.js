@@ -55,7 +55,7 @@ export default function makeConfig(isDevelopment) {
     },
     module: {
       loaders: [{
-        loader: 'url-loader?limit=10000',
+        loader: 'file-loader?name=[name].[hash].[ext]',
         test: /\.(gif|jpg|png|svg|mp4|mov)$/
       }, {
         loader: 'url-loader?limit=1',
@@ -85,12 +85,12 @@ export default function makeConfig(isDevelopment) {
     output: isDevelopment ? {
       path: constants.BUILD_DIR,
       filename: '[name].js',
-      chunkFilename: '[name]-[chunkhash].js',
+      chunkFilename: '[name].[chunkhash].js',
       publicPath: `http://${serverIp}:${constants.HOT_RELOAD_PORT}/build/`
     } : {
       path: constants.BUILD_DIR,
-      filename: '[name]-[hash].js',
-      chunkFilename: '[name]-[chunkhash].js',
+      filename: '[name].[hash].js',
+      chunkFilename: '[name].[chunkhash].js',
       publicPath: '/assets/'
     },
     plugins: (() => {
@@ -112,7 +112,7 @@ export default function makeConfig(isDevelopment) {
       else plugins.push(
         // Render styles into separate cacheable file to prevent FOUC and
         // optimize for critical rendering path.
-        new ExtractTextPlugin('app-[hash].css', {
+        new ExtractTextPlugin('app.[hash].css', {
           allChunks: true
         }),
         new webpack.optimize.DedupePlugin(),

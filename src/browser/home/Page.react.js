@@ -24,13 +24,27 @@ import bg3 from '../../images/bg3.png';
 import bg4 from '../../images/bg4.jpg';
 import bg5 from '../../images/bg5.jpg';
 
-export default class Page extends Component {
+var boot;
+if(typeof window !== 'undefined') {
+  let $ = require('jquery');
+  window.$ = window.jQuery = $;
+  require('bootstrap');
+  boot = require('../lib/js/jquery.main.js');
+}
 
+export default class Page extends Component {
   static propTypes = {
     // Why not PropTypes.object.isRequired? Because:
     // https://github.com/rackt/react-router/issues/1505
     msg: PropTypes.object
   };
+
+  componentDidMount() {
+    if(boot) {
+      boot();
+      picturefill();
+    }
+  }
 
   render() {
     const {msg: {home: msg}} = this.props;
@@ -57,6 +71,7 @@ export default class Page extends Component {
             </div>
           </div>
         </section>
+
         <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner" role="listbox">
             <div className="item active">
@@ -80,14 +95,13 @@ export default class Page extends Component {
                       <span data-picture data-alt="drive change">
                         <span data-src={img3} ></span>
                         <span data-src={img3x} data-width="442" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span>
-                        {/* <span data-src="images/img3.png"></span> */}
-                        <noscript><img src={img3} width="442" height="497" alt="image description" /></noscript>
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="item">
               <div className="container">
                 <div className="row">
@@ -106,13 +120,6 @@ export default class Page extends Component {
                       <span data-picture data-alt="drive change">
                         <span data-src={img3} ></span>
                         <span data-src={img3x} data-width="442" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span>
-                        {
-                        // <!--[if (lt IE 9) & (!IEMobile)]>
-                        //   <span data-src="images/img3.png"></span>
-                        // <![endif]-->
-                        // <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-                        }
-                        <noscript><img src={img3} width="442" height="497" alt="image description" /></noscript>
                       </span>
                     </div>
                   </div>
@@ -120,6 +127,7 @@ export default class Page extends Component {
               </div>
             </div>
           </div>
+
           <div className="switchers">
             <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
               <i className="icon-arrow-left"></i>
@@ -129,6 +137,7 @@ export default class Page extends Component {
             </a>
           </div>
         </div>
+
         <section className="infoarea" style={{backgroundImage: `url(${bg2})`}}>
           <div className="container">
             <div className="row">
@@ -275,7 +284,7 @@ export default class Page extends Component {
               <article className="col-xs-12 col-sm-6">
                 <strong className="title">For Developers</strong>
                 <h1>Extend Orbsa Platform</h1>
-                <p>Orbsa's got APIs, custom apps, and integrations for you to build<br /> anything and everything you want on top of the Orbsa platform.<br /> Imagine the possibilities and take the reins of your subscription<br /> business</p>
+                <p>Orbsa's got APIs, custom apps, and integrations for you to build<br/>anything and everything you want on top of the Orbsa platform.<br/>Imagine the possibilities and take the reins of your subscription<br/>business</p>
                 <a href="#" className="btn btn-info">See examples</a>
               </article>
               <div className="col-xs-12 col-sm-6 img-holder">
@@ -319,8 +328,8 @@ export default class Page extends Component {
                 <strong className="title">Go Ahead</strong>
                 <h2>Take it for a Spin</h2>
                 <div className="fields-holder">
-                  <input type="text" placeholder="Razvan Stancea" className="form-control" />
-                  <input type="email" placeholder="raz@thedictator.com" className="form-control" />
+                  <input type="text" placeholder="Your name" className="form-control" />
+                  <input type="email" placeholder="youremail@example.com" className="form-control" />
                 </div>
                 <button type="submit" className="btn btn-primary">See Orbsa <span className="symbol">»</span></button>
                 <p>We guarantee 100% privacy. Your information will not be shared.</p>

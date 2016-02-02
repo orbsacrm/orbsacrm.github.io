@@ -10,13 +10,6 @@ import mapDispatchToProps from '../../common/app/mapDispatchToProps';
 import mapStateToProps from '../../common/app/mapStateToProps';
 import {connect} from 'react-redux';
 
-if(typeof window !== 'undefined') {
-  let $ = require('jquery');
-  window.$ = window.jQuery = $;
-  require('bootstrap');
-  require('../lib/js/jquery.main.js');
-}
-
 class App extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
@@ -46,7 +39,7 @@ class App extends Component {
           titleTemplate="%s - Orbsa"
         />
         {/* Pathname enforces rerender so activeClassName is updated. */}
-        <Header msg={msg} pathname={pathname} viewer={viewer} />
+        <Header hero={pathname === '/'} msg={msg} pathname={pathname} viewer={viewer} />
         <RouterHandler {...this.props} />
         <Footer msg={msg.app.footer} />
       </div>
