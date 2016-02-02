@@ -9,6 +9,7 @@ import orbsa40sec from '../../media/orbsa_40sec.mp4';
 export default class Header extends Component {
   render() {
     let hero = this.props.hero ? <Hero /> : '';
+
     return (
       <div className="top-container">
         {hero}

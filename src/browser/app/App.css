@@ -264,7 +264,7 @@ embed {
 }
 
 .navbar-header {
-  margin: 0;
+  margin: 12px 0;
   padding: 0 20px;
 }
 
@@ -282,6 +282,7 @@ embed {
 .navbar-brand > img {
   display: block;
   max-width: none;
+  margin-top: 7px;
   width: 100%;
   height: auto;
 }
@@ -1743,7 +1744,7 @@ h1 {
   }
 
   .navbar-default .navbar-nav {
-    margin: 6px 0 0;
+    margin: 12px 0 0;
   }
 
   .navbar-default .navbar-nav > li {
