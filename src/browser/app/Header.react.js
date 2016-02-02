@@ -37,7 +37,7 @@ export default class Header extends Component {
                       <a href="#">Log-in</a> or
                       <Link to="signup" className="btn btn-default">Sign-up</Link>
                     </div>
-                    <a href="#" className="btn btn-primary btn-demo">Request a Demo</a>
+                    <Link to="signup" className="btn btn-primary btn-demo">Request a Demo</Link>
                   </div>
                 </nav>
               </div>
