@@ -1,12 +1,10 @@
 import compression from 'compression';
 import device from 'express-device';
-import esteMiddleware from '../lib/esteMiddleware';
 import express from 'express';
 import render from './render';
 
 const app = express();
 
-app.use(esteMiddleware());
 app.use(compression());
 
 // Note we don't need serve-favicon middleware, it doesn't work with static
