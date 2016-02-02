@@ -56,13 +56,16 @@ export default function makeConfig(isDevelopment) {
     module: {
       loaders: [{
         loader: 'url-loader?limit=10000',
-        test: /\.(gif|jpg|png|svg)$/
+        test: /\.(gif|jpg|png|svg|mp4|mov)$/
       }, {
         loader: 'url-loader?limit=1',
         test: /favicon\.ico$/
       }, {
         loader: 'url-loader?limit=100000',
         test: /\.(eot|ttf|woff|woff2)$/
+      }, {
+        test: require.resolve('jquery'),
+        loader: 'expose?jQuery|expose?$',
       }, {
         test: /\.js$/,
         exclude: /node_modules/,

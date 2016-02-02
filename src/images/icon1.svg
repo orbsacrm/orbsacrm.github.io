@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54px" height="56.118px"
+	 viewBox="0 0 54 56.118" enable-background="new 0 0 54 56.118" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+	</foreignObject>
+	<g i:extraneous="self">
+		<g>
+			<g>
+				<path fill="#30343E" d="M36,56.118H6c-3.42,0-6-2.58-6-6C0,31.38,3.25,21.453,6.293,18.411
+					c3.101-3.101,10.02-6.086,10.313-6.212l0.788,1.838c-0.068,0.029-6.859,2.96-9.687,5.788C5.074,22.458,2,31.971,2,50.118
+					c0,2.318,1.682,4,4,4h30c2.318,0,4-1.682,4-4c0-18.147-3.074-27.66-5.707-30.293c-2.831-2.831-9.619-5.759-9.687-5.788
+					l0.788-1.838c0.293,0.125,7.212,3.111,10.313,6.212C38.75,21.453,42,31.38,42,50.118C42,53.539,39.42,56.118,36,56.118z"/>
+			</g>
+			<g>
+				<rect x="17" y="9.118" fill="#FFD100" width="8" height="4"/>
+			</g>
+			<g>
+				<path fill="#30343E" d="M26,14.118H16v-6h10V14.118z M18,12.118h6v-2h-6V12.118z"/>
+			</g>
+			<g>
+				<polygon fill="#30343E" points="25.832,9.673 24.168,8.563 27.54,3.506 25,2.236 21,4.236 17,2.236 14.46,3.506 17.832,8.563 
+					16.168,9.673 11.54,2.73 17,0 21,2 25,0 30.46,2.73 				"/>
+			</g>
+			<g>
+				<circle fill="#FFD100" cx="21" cy="30.118" r="12"/>
+			</g>
+			<g>
+				<g>
+					<g>
+						<rect x="43" y="51.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M54,56.118H42v-6h12V56.118z M44,54.118h8v-2h-8V54.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="43" y="47.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M54,52.118H42v-6h12V52.118z M44,50.118h8v-2h-8V50.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="43" y="43.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M54,48.118H42v-6h12V48.118z M44,46.118h8v-2h-8V46.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="43" y="39.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M54,44.118H42v-6h12V44.118z M44,42.118h8v-2h-8V42.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="33" y="51.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M44,56.118H32v-6h12V56.118z M34,54.118h8v-2h-8V54.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="33" y="47.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M44,52.118H32v-6h12V52.118z M34,50.118h8v-2h-8V50.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="33" y="43.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M44,48.118H32v-6h12V48.118z M34,46.118h8v-2h-8V46.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="33" y="39.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M44,44.118H32v-6h12V44.118z M34,42.118h8v-2h-8V42.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="23" y="51.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M34,56.118H22v-6h12V56.118z M24,54.118h8v-2h-8V54.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="23" y="47.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M34,52.118H22v-6h12V52.118z M24,50.118h8v-2h-8V50.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="43" y="35.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M54,40.118H42v-6h12V40.118z M44,38.118h8v-2h-8V38.118z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="43" y="31.118" fill="#FFD100" width="10" height="4"/>
+					</g>
+					<g>
+						<path fill="#30343E" d="M54,36.118H42v-6h12V36.118z M44,34.118h8v-2h-8V34.118z"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path fill="#30343E" d="M21,37.118c-2.206,0-4-1.794-4-4h2c0,1.103,0.897,2,2,2s2-0.897,2-2c0-1.139-1.417-1.813-2.253-2.033
+						C19.019,30.633,17,29.323,17,27.118c0-2.206,1.794-4,4-4s4,1.794,4,4h-2c0-1.103-0.897-2-2-2s-2,0.897-2,2
+						c0,1.139,1.417,1.813,2.253,2.033C22.981,29.603,25,30.914,25,33.118C25,35.324,23.206,37.118,21,37.118z"/>
+				</g>
+			</g>
+			<g>
+				<rect x="20" y="22.118" fill="#30343E" width="2" height="2"/>
+			</g>
+			<g>
+				<rect x="20" y="36.118" fill="#30343E" width="2" height="2"/>
+			</g>
+			<g>
+				<rect x="27" y="29.118" fill="#30343E" width="2" height="2"/>
+			</g>
+			<g>
+				<rect x="13" y="29.118" fill="#30343E" width="2" height="2"/>
+			</g>
+		</g>
+	</g>
+</switch>
+</svg>

@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
 export default class Html extends Component {
-
   static propTypes = {
     appCssFilename: PropTypes.string,
     bodyHtml: PropTypes.string.isRequired,
@@ -37,14 +36,17 @@ ga('create', '${googleAnalyticsId}', 'auto'); ga('send', 'pageview');`}}
           <meta charSet="utf-8" />
           <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
           <meta content="ie=edge" httpEquiv="x-ua-compatible" />
+
           {helmet.title.toComponent()}
           {helmet.base.toComponent()}
           {helmet.meta.toComponent()}
           {helmet.link.toComponent()}
           {helmet.script.toComponent()}
+
           {linkStyles}
           {analytics}
         </head>
+
         <body dangerouslySetInnerHTML={{__html: bodyHtml}} />
       </html>
     );

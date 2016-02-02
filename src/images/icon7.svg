@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+	</foreignObject>
+	<g i:extraneous="self">
+		<g>
+			<g>
+				<g>
+					<path fill="#D0D3D4" d="M30,26H4c-2.206,0-4-1.794-4-4V4c0-2.206,1.794-4,4-4h26c2.206,0,4,1.794,4,4v18
+						C34,24.206,32.206,26,30,26z M4,2C2.897,2,2,2.897,2,4v18c0,1.103,0.897,2,2,2h26c1.103,0,2-0.897,2-2V4c0-1.103-0.897-2-2-2H4
+						z"/>
+				</g>
+				<g>
+					<rect x="20" y="26" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="12" y="26" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="16" y="18" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="12" y="18" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="20" y="18" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="10" y="28" fill="#D0D3D4" width="14" height="2"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path fill="#D0D3D4" d="M60,60H34c-2.206,0-4-1.794-4-4V38c0-2.206,1.794-4,4-4h26c2.206,0,4,1.794,4,4v18
+						C64,58.206,62.206,60,60,60z M34,36c-1.103,0-2,0.897-2,2v18c0,1.103,0.897,2,2,2h26c1.103,0,2-0.897,2-2V38
+						c0-1.103-0.897-2-2-2H34z"/>
+				</g>
+				<g>
+					<rect x="50" y="60" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="42" y="60" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="34" y="38" fill="#FFD100" width="26" height="18"/>
+				</g>
+				<g>
+					<rect x="46" y="52" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="42" y="52" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="50" y="52" fill="#D0D3D4" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="40" y="62" fill="#D0D3D4" width="14" height="2"/>
+				</g>
+			</g>
+			<g>
+				<rect x="52" y="22" fill="#D0D3D4" width="2" height="10"/>
+			</g>
+			<g>
+				<rect x="36" y="14" fill="#D0D3D4" width="10" height="2"/>
+			</g>
+			<g>
+				<path fill="#D0D3D4" d="M53,20c-2.757,0-5-2.243-5-5s2.243-5,5-5s5,2.243,5,5S55.757,20,53,20z M53,12c-1.654,0-3,1.346-3,3
+					s1.346,3,3,3s3-1.346,3-3S54.654,12,53,12z"/>
+			</g>
+			<g>
+				<rect x="10" y="32" fill="#D0D3D4" width="2" height="10"/>
+			</g>
+			<g>
+				<rect x="18" y="48" fill="#D0D3D4" width="10" height="2"/>
+			</g>
+			<g>
+				<path fill="#D0D3D4" d="M11,54c-2.757,0-5-2.243-5-5s2.243-5,5-5s5,2.243,5,5S13.757,54,11,54z M11,46c-1.654,0-3,1.346-3,3
+					s1.346,3,3,3s3-1.346,3-3S12.654,46,11,46z"/>
+			</g>
+		</g>
+	</g>
+</switch>
+</svg>

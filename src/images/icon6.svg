@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="60px"
+	 viewBox="0 0 64 60" enable-background="new 0 0 64 60" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="Layer_2">
+		</g>
+		<g id="Layer_1">
+			<g>
+				<g>
+					<path fill="#D2D2D2" d="M8,36c-0.129,0-0.259-0.024-0.383-0.076C7.244,35.77,7,35.404,7,35v-7H3c-1.654,0-3-1.346-3-3V3
+						c0-1.654,1.346-3,3-3h48c1.654,0,3,1.346,3,3v22c0,1.654-1.346,3-3,3H16.414l-7.707,7.707C8.516,35.898,8.26,36,8,36z M3,2
+						C2.449,2,2,2.448,2,3v22c0,0.552,0.449,1,1,1h5c0.552,0,1,0.447,1,1v5.586l6.293-6.293C15.48,26.105,15.735,26,16,26h35
+						c0.552,0,1-0.448,1-1V3c0-0.552-0.448-1-1-1H3z"/>
+				</g>
+				<g>
+					<path fill="#D2D2D2" d="M51,60H10c-1.654,0-3-1.346-3-3V38h2v19c0,0.552,0.449,1,1,1h41c0.552,0,1-0.448,1-1V47
+						c0-0.266,0.105-0.52,0.293-0.707L60.586,38H53c-0.552,0-1-0.447-1-1v-4c0-0.552-0.448-1-1-1H17v-2h34c1.654,0,3,1.346,3,3v3h9
+						c0.404,0,0.769,0.243,0.924,0.617c0.154,0.374,0.069,0.804-0.217,1.09L54,47.414V57C54,58.654,52.654,60,51,60z"/>
+				</g>
+				<g>
+					<rect x="14" y="4" fill="#FFD100" width="26" height="6"/>
+				</g>
+				<g>
+					<rect x="4" y="12" fill="#D2D2D2" width="46" height="2"/>
+				</g>
+				<g>
+					<rect x="4" y="16" fill="#D2D2D2" width="46" height="2"/>
+				</g>
+				<g>
+					<rect x="11" y="48" fill="#D2D2D2" width="39" height="2"/>
+				</g>
+				<g>
+					<rect x="11" y="52" fill="#D2D2D2" width="29" height="2"/>
+				</g>
+				<g>
+					<rect x="4" y="20" fill="#D2D2D2" width="16" height="2"/>
+				</g>
+				<g>
+					<rect x="26" y="6" fill="#D2D2D2" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="30" y="6" fill="#D2D2D2" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="22" y="6" fill="#D2D2D2" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="21" y="36" fill="#D2D2D2" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="25" y="36" fill="#D2D2D2" width="2" height="2"/>
+				</g>
+				<g>
+					<rect x="17" y="36" fill="#D2D2D2" width="2" height="2"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</switch>
+</svg>

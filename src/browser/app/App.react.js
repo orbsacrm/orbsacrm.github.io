@@ -1,4 +1,5 @@
-import './App.styl';
+import './App.css';
+import './bootstrap.css';
 import Component from 'react-pure-render/component';
 import Footer from './Footer.react';
 import Header from './Header.react';
@@ -9,8 +10,14 @@ import mapDispatchToProps from '../../common/app/mapDispatchToProps';
 import mapStateToProps from '../../common/app/mapStateToProps';
 import {connect} from 'react-redux';
 
-class App extends Component {
+if(typeof window !== 'undefined') {
+  let $ = require('jquery');
+  window.$ = window.jQuery = $;
+  require('bootstrap');
+  require('../lib/js/jquery.main.js');
+}
 
+class App extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
@@ -19,11 +26,15 @@ class App extends Component {
   };
 
   render() {
-    const {location: {pathname}, msg, users: {viewer}} = this.props;
+    const {
+      location: {pathname},
+      msg,
+      users: {viewer}
+    } = this.props;
 
     return (
       // Pass data-pathname to allow route specific styling.
-      <div className="page" data-pathname={pathname}>
+      <div id="wrapper" data-pathname={pathname}>
         <Helmet
           link={[
             {rel: 'shortcut icon', href: require('./favicon.ico')}
@@ -32,7 +43,7 @@ class App extends Component {
             name: 'description',
             content: 'Dev stack and starter kit for functional and universal React web apps'
           }]}
-          titleTemplate="%s - Este.js"
+          titleTemplate="%s - Orbsa"
         />
         {/* Pathname enforces rerender so activeClassName is updated. */}
         <Header msg={msg} pathname={pathname} viewer={viewer} />
@@ -41,7 +52,6 @@ class App extends Component {
       </div>
     );
   }
-
 }
 
 // // logRenderTime is useful for app with huge UI to check render performance.

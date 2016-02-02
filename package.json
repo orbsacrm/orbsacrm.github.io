@@ -7,7 +7,6 @@
   "private": true,
   "//": "Use gulp for dev. It's cross platform.",
   "scripts": {
-    "install": "gulp fix-react-native",
     "postinstall": "gulp build --production",
     "test": "gulp test"
   },
@@ -33,6 +32,8 @@
     "babel-runtime": "^6.3.19",
     "bluebird": "^3.0.5",
     "body-parser": "^1.12.4",
+    "bootstrap": "^3.3.6",
+    "bootstrap-webpack": "0.0.5",
     "chai": "^3.4.1",
     "chai-as-promised": "^5.2.0",
     "chai-immutable": "^1.5.2",
@@ -67,6 +68,7 @@
     "invariant": "^2.1.2",
     "ip": "^1.0.2",
     "isomorphic-fetch": "^2.1.1",
+    "jquery": "^2.2.0",
     "jsdom": "^7.0.2",
     "less": "^2.5.1",
     "less-loader": "^2.0.0",
@@ -81,9 +83,6 @@
     "react-dom": "^0.14.0",
     "react-helmet": "^2.1.1",
     "react-intl": "^2.0.0-pr-1",
-    "react-native": "^0.18.0",
-    "react-native-browser-polyfill": "^0.1.1",
-    "react-native-side-menu": "^0.18.0",
     "react-pure-render": "^1.0.1",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.0-rc5",
@@ -111,5 +110,9 @@
     "webpack-hot-middleware": "^2.1.0",
     "webpack-isomorphic-tools": "^2.2.24",
     "yargs": "^3.3.1"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.1",
+    "less-loader": "^2.2.2"
   }
 }

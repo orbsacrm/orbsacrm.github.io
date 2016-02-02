@@ -2,6 +2,10 @@ import * as plugin from 'webpack-isomorphic-tools/plugin';
 
 export default {
   assets: {
+    media: {
+      extensions: ['mp4', 'mov'],
+      parser: plugin.url_loader_parser,
+    },
     images: {
       extensions: ['gif', 'jpg', 'png', 'ico'],
       parser: plugin.url_loader_parser
