@@ -1,6 +1,7 @@
 import Component from 'react-pure-render/component';
 import Helmet from 'react-helmet';
 import React, {PropTypes} from 'react';
+import ReactDOM from 'react-dom';
 import {FormattedHTMLMessage} from 'react-intl';
 import {Link} from 'react-router';
 
@@ -24,27 +25,12 @@ import bg3 from '../../images/bg3.png';
 import bg4 from '../../images/bg4.jpg';
 import bg5 from '../../images/bg5.jpg';
 
-var boot;
-if(typeof window !== 'undefined') {
-  let $ = require('jquery');
-  window.$ = window.jQuery = $;
-  require('bootstrap');
-  boot = require('../lib/js/jquery.main.js');
-}
-
 export default class Page extends Component {
   static propTypes = {
     // Why not PropTypes.object.isRequired? Because:
     // https://github.com/rackt/react-router/issues/1505
     msg: PropTypes.object
   };
-
-  componentDidMount() {
-    if(boot) {
-      boot();
-      picturefill();
-    }
-  }
 
   render() {
     const {msg: {home: msg}} = this.props;

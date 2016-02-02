@@ -112,6 +112,7 @@ function initVideoBg() {
         }
       }
     },
+
     findElements: function() {
       this.holder = $(this.options.holder);
       this.video = this.holder.find('video').css({
@@ -120,16 +121,20 @@ function initVideoBg() {
       })
 
       this.video.prop('muted', true);
+
       // if (this.options.loop) {
       //   this.video.attr('loop', 'loop');
       // }
+
       if (this.options.autoPlay) {
         this.video.attr('autoplay', '');
       }
+
       if (isTouchDevice) {
         this.video.remove();
       }
     },
+
     buildPoster: function() {
       this.holder.css({
         'background-image': 'url(' + this.video.attr('poster') + ')',
@@ -137,16 +142,19 @@ function initVideoBg() {
         'background-size':'cover'
       });
     },
+
     attachEvents: function() {
       var self = this;
 
       this.video[0].oncanplaythrough = function() {
+        console.log('oncanplaythrough');
         self.ratio = self.video.width() / self.video.height();
         self.resizeHandler();
         win.on('load resize orientationchange', self.resizeHandler);
         self.resizeVideo();
         self.makeCallback('onReady', true);
       }
+
       this.video[0].load();
 
       this.video[0].onplay = function() {
@@ -165,6 +173,7 @@ function initVideoBg() {
         self.resizeVideo();
       };
     },
+
     resizeVideo: function() {
       var styles = this.getDimensions({
         videoRatio: this.ratio,
@@ -179,6 +188,7 @@ function initVideoBg() {
         marginLeft: styles.left
       });
     },
+
     getDimensions: function(data) {
       var ratio = data.videoRatio,
         slideWidth = data.maskWidth,
@@ -195,6 +205,7 @@ function initVideoBg() {
         left: (data.maskWidth - slideWidth) / 2
       };
     },
+
     makeCallback: function(name) {
       if (typeof this.options[name] === 'function') {
         var args = Array.prototype.slice.call(arguments);

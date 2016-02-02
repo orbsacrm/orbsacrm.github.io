@@ -5,12 +5,35 @@ import {Link} from 'react-router';
 import img1 from '../../images/img1.jpg';
 import orbsa40sec from '../../media/orbsa_40sec.mp4';
 
+var boot;
+if(typeof window !== 'undefined') {
+  let $ = require('jquery');
+  window.$ = window.jQuery = $;
+  require('bootstrap');
+  boot = require('../lib/js/jquery.main.js');
+}
+
 export default class Hero extends Component {
+  setupVideo() {
+    if(boot) {
+      boot();
+      picturefill();
+    }
+  }
+
+  componentDidMount() {
+    this.setupVideo();
+  }
+
+  componentDidUpdate() {
+    this.setupVideo();
+  }
+
   render() {
     return (
       <div className="hero-block text-center" style={{backgroundImage: 'url(' + img1  + ')'}}>
         <div className="video-area">
-          <video width="640" height="360" poster={img1} preload="metadata" autoPlay src={orbsa40sec} />
+          <video muted width="640" height="360" poster={img1} preload="metadata" autoPlay src={orbsa40sec} />
         </div>
         <div className="hero-holder">
           <div className="container">
